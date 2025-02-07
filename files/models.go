@@ -1,4 +1,4 @@
-package main
+package files
 
 type Entry struct {
 	DateTime string `json:"dateTime"`
@@ -8,7 +8,3 @@ type Entry struct {
 type Entries []Entry
 
 type FilesMap map[string]Entries
-
-type StepsCalendar struct {
-	DateToSteps map[string]int `json:"dateToSteps"`
-}

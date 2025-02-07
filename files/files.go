@@ -1,4 +1,4 @@
-package main
+package files
 
 import (
 	"encoding/json"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func extractJSONFiles(path string) (FilesMap, error) {
+func ExtractJSONFiles(path string) (FilesMap, error) {
 	files, err := getJSONFiles(path)
 	if err != nil {
 		return FilesMap{}, fmt.Errorf("failed to get JSON files: %w", err)
